@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://120.78.174.217/sell?characterEncoding=utf-8&useSSL=false
+
+  jackson:
+    #全局配置返回值为NULL时不接收
+    default-property-inclusion: non_null
+  redis:
+    host: 120.78.174.217
+    port: 6379
+server:
+  servlet:
+    context-path: /sell
+  port: 443
+#  ssl:
+#    key-store: classpath:keystore.p12
+#    key-store-password: hualuo1997
+#    key-store-type: PKCS12
+#    key-alias: tomcat
+  ssl:
+    key-store: classpath:2312069_qiuki.top.pfx
+    key-store-password: Ha3Tl7PC
+    key-store-type: PKCS12
+
+projectUrl:
+  sell: https://www.qiuki.top
